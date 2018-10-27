@@ -1,10 +1,10 @@
-FROM debian:jessie
-MAINTAINER dsheyp
+FROM debian:stretch
+MAINTAINER davidgovea
 
-RUN echo deb http://www.lesbonscomptes.com/recoll/debian/ unstable main > \
+RUN echo deb http://www.lesbonscomptes.com/recoll/debian/ stretch main > \
 	/etc/apt/sources.list.d/recoll.list
 
-RUN echo deb-src http://www.lesbonscomptes.com/recoll/debian/ unstable main >> \
+RUN echo deb-src http://www.lesbonscomptes.com/recoll/debian/ stretch main >> \
 	/etc/apt/sources.list.d/recoll.list
 
 RUN apt-get update && \
